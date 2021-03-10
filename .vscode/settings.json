@@ -1,0 +1,83 @@
+{
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  "spellright.language": ["en", "fr"],
+  "spellright.documentTypes": ["latex", "plaintext", "markdown"],
+  "markdownlint.config": {
+    "default": true,
+    "MD013": false,
+    "MD003": {
+      "style": "atx"
+    },
+    "MD024": {
+      "allow_different_nesting": true
+    },
+    "MD026": {
+      "punctuation": ".,;:!"
+    },
+    "MD036": {
+      "punctuation": ".,;:!?)…"
+    }
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "css.validate": false,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "css": "css"
+  },
+  // "prettier.disableLanguages": [],
+  // "[html]": {
+  //   "editor.defaultFormatter": null
+  // },
+  // "prettier.disableLanguages": [
+  //   "html"
+  // ],
+  // "html.format.enable": false,
+  "prettier.singleQuote": true,
+  "scss.lint.unknownProperties": "ignore",
+  // "eslint.packageManager": "yarn",
+  // "typescript.preferences.quoteStyle": "single",
+  // "javascript.preferences.quoteStyle": "single",
+  // "files.insertFinalNewline": true,
+  // "eslint.workingDirectories": [
+  //   {
+  //     "mode": "auto"
+  //   }
+  // ],
+  // "eslint.validate": [
+  //   "javascript",
+  //   "javascriptreact",
+  //   "typescript",
+  //   "typescriptreact"
+  // ],
+  // "eslint.lintTask.enable": true,
+  // "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "highlight.regexes": {
+    "( | )": {
+      "regexFlags": "g",
+      "filterLanguageRegex": "markdown",
+      "decorations": {
+        "cursor": "crosshair",
+        "backgroundColor": "rgba(0,126,255,0.1)",
+        "borderWidth": "1px",
+        "borderStyle": "solid",
+        "borderColor": "rgba(0,126,255,0.2)"
+      }
+    },
+    "(’|•)": {
+      "regexFlags": "g",
+      "filterLanguageRegex": "markdown",
+      "decorations": {
+        "cursor": "crosshair",
+        "backgroundColor": "rgba(255,0,0,0.3)",
+        "borderWidth": "1px",
+        "borderStyle": "solid",
+        "borderColor": "rgba(255,0,0,0.6)"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+[build]
+  publish = "public/"
+  command = "hugo --gc --minify --cleanDestinationDir"
+  environment = { HUGO_VERSION = "0.80.0" }
+
+[context.production]
+  environment = { NODE_ENV = "production", HUGO_ENV = "production", HUGO_ENABLEGITINFO = "true" }
+
+[context.deploy-preview]
+  command = "hugo --gc --minify --buildFuture --cleanDestinationDir"
+  environment = { NODE_ENV = "production", HUGO_ENV = "production", HUGO_ENABLEGITINFO = "true" }
+
+[context.branch-deploy]
+  command = "hugo --gc --minify --buildFuture --cleanDestinationDir"
+  environment = { NODE_ENV = "production", HUGO_ENV = "production", HUGO_ENABLEGITINFO = "true" }
+
+[dev]
+  command = "hugo server --disableFastRender --gc --ignoreCache --noHTTPCache -D --buildFuture"
+  port = 3001
